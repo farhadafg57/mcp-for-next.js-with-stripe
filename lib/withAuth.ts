@@ -12,8 +12,9 @@ export function withAuth<
   ): Promise<ReturnType<T>> => {
     const newHeaders = new Headers(req.headers);
 
-    // Repalce this with logic of your auth service
-    newHeaders.set("x-user-email", "dummyaccount@example.com");
+    // Extract email from search params
+    const email = req.nextUrl?.searchParams?.get("email") || "";
+    newHeaders.set("x-user-email", email);
 
     const authReq = new NextRequest(req.url, {
       method: req.method,

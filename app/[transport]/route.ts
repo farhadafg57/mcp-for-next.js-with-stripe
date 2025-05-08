@@ -3,7 +3,6 @@ import { z } from "zod";
 
 import { registerPaidTool } from "@stripe/agent-toolkit/modelcontextprotocol";
 import { withAuth } from "@/lib/withAuth";
-import { headers } from "next/headers";
 
 const generateImage = async (_prompt: string) => {
   return "https://example.com/image.png";
