@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.10.2",
+    "@stripe/agent-toolkit": "^0.7.6",
     "@vercel/mcp-adapter": "^0.2.1",
     "next": "15.2.4",
     "redis": "^4.7.0",
