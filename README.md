@@ -1,6 +1,8 @@
-# Example Next.js MCP Server
+# Example Next.js MCP Server Using Stripe Agent Toolkit
 
 **Uses `@vercel/mcp-adapter`**
+
+**Uses `@stripe/agent-toolkit`**
 
 
 ## Usage
