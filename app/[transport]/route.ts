@@ -37,8 +37,6 @@ const handlerWithAuth = withAuth((request) => {
         },
         {
           paymentReason: "Generate an image",
-          state: {},
-          setState: () => {},
           stripeSecretKey: process.env.STRIPE_SECRET_KEY ?? "",
           userEmail: email ?? "",
           successUrl: "https://example.com/success",
