@@ -55,8 +55,7 @@ const handlerWithAuth = withAuth((request) => {
     },
     {
       redisUrl: process.env.REDIS_URL,
-      sseEndpoint: "/sse",
-      streamableHttpEndpoint: "/mcp",
+      basePath: "",
       verboseLogs: false,
       maxDuration: 60,
     }

@@ -13,7 +13,7 @@ export function withAuth<
     const newHeaders = new Headers(req.headers);
 
     // Extract email from search params
-    const email = req.nextUrl?.searchParams?.get("email") || "";
+    const email = req.nextUrl?.searchParams?.get("email") || "test@test.com";
     newHeaders.set("x-user-email", email);
 
     const authReq = new NextRequest(req.url, {
